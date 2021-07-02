@@ -141,8 +141,8 @@
         </div>
         <!-- Post Main Content -->
         <div class="entry-content has_line_number">
-          <div class="content" style="margin:40px;font-weight:bold;color:#CD3333;"><br>    <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script><br>    <div id="hitokoto" align="center"></div><br></div>
-
+          <div class="content" style="margin:40px;font-weight:bold;color:#CD3333;"><br><div onclick="fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {const hitokoto = document.getElementById('hitokoto');hitokoto.innerText = data.hitokoto}).catch(console.error);" class="content" style="margin:40px;font-weight:bold;color:#CD3333;"><br><br>    <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script><br>    <div id="hitokoto" align="center"></div><br></div>
+</div>
         </div>       
       </article>
     </div>
